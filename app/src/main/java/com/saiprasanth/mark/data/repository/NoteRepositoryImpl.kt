@@ -1,5 +1,6 @@
 package com.saiprasanth.mark.data.repository
 
+import android.provider.ContactsContract
 import com.saiprasanth.mark.data.data_source.MarkDao
 import com.saiprasanth.mark.data.data_source.MarkEntity
 import com.saiprasanth.mark.domain.repository.NoteRepository
@@ -20,7 +21,7 @@ class NoteRepositoryImpl(
         return dao.insertData(entity)
     }
 
-    override suspend fun deleteData(entity: MarkEntity) {
+    override suspend fun deleteData(entity: ContactsContract.CommonDataKinds.Note) {
         return dao.deleteData(entity)
     }
 }

@@ -24,3 +24,5 @@ data class MarkEntity(
         )
     }
 }
+
+class InvalidException(message :String) :Exception(message)

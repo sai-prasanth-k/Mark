@@ -1,5 +1,6 @@
 package com.saiprasanth.mark.domain.usecase
 
+import android.provider.ContactsContract
 import com.saiprasanth.mark.data.data_source.MarkEntity
 import com.saiprasanth.mark.domain.repository.NoteRepository
 

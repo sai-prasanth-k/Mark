@@ -5,6 +5,7 @@ import androidx.room.Room
 import com.saiprasanth.mark.data.data_source.MarkDatabase
 import com.saiprasanth.mark.data.repository.NoteRepositoryImpl
 import com.saiprasanth.mark.domain.repository.NoteRepository
+import com.saiprasanth.mark.domain.usecase.AddNote
 import com.saiprasanth.mark.domain.usecase.DataUseCase
 import com.saiprasanth.mark.domain.usecase.DeleteData
 import com.saiprasanth.mark.domain.usecase.GetData
@@ -39,7 +40,8 @@ object AppModule {
     fun provideUseCases(repository: NoteRepository):DataUseCase{
         return DataUseCase(
             getData = GetData(repository),
-            deleteData = DeleteData(repository)
+            deleteData = DeleteData(repository),
+            addNote = AddNote(repository)
         )
     }
 }
