@@ -1,6 +1,5 @@
 package com.saiprasanth.mark.domain.model
 
-import androidx.compose.ui.graphics.Color
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.saiprasanth.mark.ui.theme.Blue
